@@ -1,4 +1,5 @@
 import 'package:aula01/screens/myhomepage.dart';
+import 'package:aula01/screens/segunda_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.green),
       ),
-      home: const MyHomePage(title: 'Calculadora pra farmar aura'),
+      //home: const MyHomePage(title: 'Calculadora pra farmar aura'),
+      home: SegundaPage(),
     );
   }
 }

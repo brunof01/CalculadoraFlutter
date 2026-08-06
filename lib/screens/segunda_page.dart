@@ -14,12 +14,7 @@ class _SegundaPageState extends State<SegundaPage> {
         backgroundColor: Colors.green,
         title: Text("segunda tela"),
       ),
-      body: Center(
-        
-          child: Column(
-
-          )
-      ),
+      body: Center(child: Column(children: [Text("tela 2 deu boa")])),
     );
   }
 }
