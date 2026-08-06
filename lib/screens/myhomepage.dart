@@ -1,4 +1,5 @@
 import 'package:aula01/screens/segunda_page.dart';
+import 'package:aula01/screens/terceira_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -138,7 +139,16 @@ class _MyHomePageState extends State<MyHomePage>
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => SegundaPage()));
                 },
-              )
+              ),
+              ListTile(
+                title: Text("Terceira Page"),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TerceiraPage()),
+                  );
+                },
+              ),
             ],
           ),
         ),

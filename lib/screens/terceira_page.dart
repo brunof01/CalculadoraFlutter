@@ -1,21 +1,21 @@
-import 'package:aula01/screens/terceira_page.dart';
+import 'package:aula01/screens/segunda_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'myhomepage.dart';
 
-class SegundaPage extends StatefulWidget {
+class TerceiraPage extends StatefulWidget {
   @override
-  State<SegundaPage> createState() => _SegundaPageState();
+  State<TerceiraPage> createState() => _TerceiraPageState();
 }
 
-class _SegundaPageState extends State<SegundaPage> {
+class _TerceiraPageState extends State<TerceiraPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text("segunda tela"),
+        title: Text("terceira tela"),
       ),
       drawer: Drawer(
         child: ListView(
@@ -53,7 +53,7 @@ class _SegundaPageState extends State<SegundaPage> {
           ],
         ),
       ),
-      body: Center(child: Column(children: [Text("tela 2 deu boa")])),
+      body: Center(child: Column(children: [Text("tela 3 deu boa")])),
     );
   }
 }
