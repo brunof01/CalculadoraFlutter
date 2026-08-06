@@ -16,7 +16,6 @@ class _MyHomePageState extends State<MyHomePage>
   double num2 = 0;
   double result = 0;
   String operador = '';
-  double teste = 0;
   bool _telaInvertida = false;
 
   late final AnimationController _rotController;
