@@ -1,3 +1,4 @@
+import 'package:aula01/screens/segunda_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -120,6 +121,26 @@ class _MyHomePageState extends State<MyHomePage>
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Text(widget.title),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              ListTile(
+                title: Text("Home"),
+                onTap: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyHomePage(title: "Calculadora pra farmar aura")));
+                },
+              ),
+              ListTile(
+                title: Text("Segunda Page"),
+                onTap: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SegundaPage()));
+                },
+              )
+            ],
+          ),
         ),
         body: Center(
           child: Column(

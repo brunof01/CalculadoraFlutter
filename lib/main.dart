@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.green),
       ),
-      //home: const MyHomePage(title: 'Calculadora pra farmar aura'),
-      home: SegundaPage(),
+      home: const MyHomePage(title: 'Calculadora pra farmar aura'),
+      //home: SegundaPage(),
     );
   }
 }
